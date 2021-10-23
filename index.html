@@ -2,34 +2,6 @@
     Click Me
   </button>
 
- <!-- </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="..." id="picture1">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." id="picture2">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." id="picture3">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,17 +29,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
-<body class='has-background-grey-lighter'>
+
+<body class='has-background-white'>
+
   <section class="section has-text-centered">
     <div class="container">
       <h1 class="title has-text-centered">
         Choose your Player
       </h1>
-      <input placeholder='Kobe Bryant' class="has-text-centered"></input>
-      <button class='button is-info is-small'>Find my Player</button>
+      <input placeholder="Kobe Bryant" class="has-text-centered" id="search-input"></input>
+      <button class="button is-info is-small" id="search-btn">Find my Player</button>
     </div>
   </section>
-  <section class="section playerResult container">
+  <section class="section playerResult has-background-grey-darker">
     <div class="columns is-vcentered">
       <div class="column is-5 box has-text-centered">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -102,26 +76,68 @@
        </div>
       <div class="column is-2"></div>
       <div class="column is-5">
-        <div class='is-size-4 mb-4'>
-          <div class='message is-dark'>
+        <div class="is-size-4 mb-4">
+          <div class="message is-dark">
             <div class="message-header">
-              <p>Player Name</p>
+              <p id="player-name">Player Name</p>
             </div>
             <div class="message-body">
-              <p>Current Team: </p>
-              <p>Position: </p>
-              <p>Conference: </p>
-              <p>Height: </p>
-
+              <p id="team">Current Team: </p>
+              <p id="position">Position: </p>
+              <p id="conference">Conference: </p>
+              <p id="height">Height: </p>
             </div>
           </div>
         </div>
       </div>
 
   </section>
+  <section class="section has-text-centered has-background-white columns">
+    <div class='is-vcentered column'>
+    <img src='assets/images/team_logos/atlanta_hawks.png' width=80 class='p-3 nbaTeam '></img>
+    <img src='assets/images/team_logos/boston_celtics.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/brooklyn-nets.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/charlotte__hornets.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/chicago_bulls.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/cleveland_cavaliers.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/dallas_mavericks.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/denver_nuggets.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/detroit_pistons.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/golden_state_warriors.png' width=80 class='p-3 nbaTeam'></img>
+    </div>
+    <div class='is-vcentered column '>
+    <img src='assets/images/team_logos/houston_rockets.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/indiana_pacers.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/los_angeles_clippers.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/los_angeles_lakers.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/memphis_grizzlies.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/miami_heat.gif' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/milwaukee_bucks.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/minnesota_timberwolves.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/new_orleans_pelicans.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/new_york_knicks.gif' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/oklahoma_thunder.png' width=80 class='p-3 nbaTeam'></img>
+    </div>
+    <div class='is-vcentered column'>
+    <img src='assets/images/team_logos/orlando_magic.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/philadelphia_76ers.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/phoenix_suns.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/portland_trail_blazers.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/sacramento_kings.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/san_antonio_spurs.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/toronto_raptors.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/utah_jazz.png' width=80 class='p-3 nbaTeam'></img>
+    <img src='assets/images/team_logos/washington_wizards.png' width=80 class='p-3 nbaTeam'></img>
+    </div>
+
+    
+  </section>
+  
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="script.js"></script>
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/nbaAPI.js"></script>
 
 </html>
