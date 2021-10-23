@@ -31,22 +31,3 @@ fetch("https://google-search3.p.rapidapi.com/api/v1/images/q=tesla", {
 }
 
 fetchButton.addEventListener('click', getApi);
-
-// .catch(err => {
-// 	console.error(err);
-// });
-
-// function getApi() {
-//     var requestUrl = 'https://google-search3.p.rapidapi.com/api/v1/images/q=tesla';
-  
-//     fetch(requestUrl)
-//       .then(function (response) {
-//         return response.json();
-//       })
-//       .then(function (data) {
-//         console.log(data);
-//         for (var i = 0; i < data.length; i++) {
-//             console.log(data[i].name);
-//         }
-//     })
-//     }
