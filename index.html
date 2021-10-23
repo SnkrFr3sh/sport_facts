@@ -25,14 +25,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
-<body class='has-background-grey-lighter'>
+<body class="has-background-grey-lighter">
   <section class="section has-text-centered">
     <div class="container">
       <h1 class="title has-text-centered">
         Choose your Player
       </h1>
-      <input placeholder='Kobe Bryant' class="has-text-centered"></input>
-      <button class='button is-info is-small'>Find my Player</button>
+      <input placeholder="Kobe Bryant" class="has-text-centered" id="search-input"></input>
+      <button class="button is-info is-small" id="search-btn">Find my Player</button>
     </div>
   </section>
   <section class="section playerResult container">
@@ -40,23 +40,22 @@
       <div class="column is-5 box has-text-centered">
 
         <img
-          src='https://www.sureewoong.com/wp-content/uploads/2014/03/nba-logo.jpg'
-          width=400 class='py-2 px-2'>
+          src="https://www.sureewoong.com/wp-content/uploads/2014/03/nba-logo.jpg"
+          width=400 class="py-2 px-2">
         </img>
       </div>
       <div class="column is-2"></div>
       <div class="column is-5">
-        <div class='is-size-4 mb-4'>
-          <div class='message is-dark'>
+        <div class="is-size-4 mb-4">
+          <div class="message is-dark">
             <div class="message-header">
-              <p>Player Name</p>
+              <p id="player-name">Player Name</p>
             </div>
             <div class="message-body">
-              <p>Current Team: </p>
-              <p>Position: </p>
-              <p>Conference: </p>
-              <p>Height: </p>
-
+              <p id="team">Current Team: </p>
+              <p id="position">Position: </p>
+              <p id="conference">Conference: </p>
+              <p id="height">Height: </p>
             </div>
           </div>
         </div>
@@ -67,5 +66,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="./assets/js/script.js"></script>
+<script src="./assets/js/nbaAPI.js"></script>
 
 </html>
