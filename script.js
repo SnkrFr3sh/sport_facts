@@ -2,7 +2,7 @@ var picture1 = document.getElementById('picture1');
 var picture2 = document.getElementById('picture2');
 var picture3 = document.getElementById('picture3');
 // var picture4 = document.getElementById('picture4');
-var fetchButton = document.getElementById('fetch-button');
+var fetchButton = document.getElementById('search-btn');
 
 function getApi() {
 fetch("https://google-search3.p.rapidapi.com/api/v1/images/q=tesla", {
