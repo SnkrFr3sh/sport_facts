@@ -4,8 +4,10 @@ var picture3 = document.getElementById('picture3');
 // var picture4 = document.getElementById('picture4');
 var fetchButton = document.getElementById('search-btn');
 
+
 function getApi() {
-fetch("https://google-search3.p.rapidapi.com/api/v1/images/q=tesla", {
+    console.log($("#search-input").val().trim());
+fetch(`https://google-search3.p.rapidapi.com/api/v1/images/q=tesla` , {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "google-search3.p.rapidapi.com",
@@ -16,9 +18,9 @@ fetch("https://google-search3.p.rapidapi.com/api/v1/images/q=tesla", {
     return response.json();
   })
 .then(function (data) {
-    console.log(data.image_results[0].image.src);
+    // console.log(data.image_results[0].image.src);
     for (var i = 0; i < data.length; i++) {
-        console.log(data[i].name);
+        // console.log(data[i].name);
         var userName = document
         // userName.textContent=data[i].image_results.image;
 
@@ -30,4 +32,4 @@ fetch("https://google-search3.p.rapidapi.com/api/v1/images/q=tesla", {
 })
 }
 
-fetchButton.addEventListener('click', getApi);
+fetchButton.addEventListener('click', getApi());
