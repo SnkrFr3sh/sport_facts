@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
-    <link
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NBA Player Stats </title>
+  <!-- <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  />
-  <link
+  /> -->
+  <!-- <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous"
-  />
-  <link
+  /> -->
+  <!-- <link
     href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
     rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  /> -->
+  <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
-<body>
-    
 
+<body class='has-background-grey-lighter'>
+  <section class="section has-text-centered">
+    <div class="container">
+      <h1 class="title has-text-centered">
+        Choose your Player
+      </h1>
+      <input placeholder='Kobe Bryant' class="has-text-centered"></input>
+      <button class='button is-info is-small'>Find my Player</button>
+    </div>
+  </section>
+  <section class="section playerResult container">
+    <div class="columns is-vcentered">
+      <div class="column is-5 box has-text-centered">
 
-    
+        <img
+          src='https://www.sureewoong.com/wp-content/uploads/2014/03/nba-logo.jpg'
+          width=400 class='py-2 px-2'>
+        </img>
+      </div>
+      <div class="column is-2"></div>
+      <div class="column is-5">
+        <div class='is-size-4 mb-4'>
+          <div class='message is-dark'>
+            <div class="message-header">
+              <p>Kobe Bryant</p>
+            </div>
+            <div class="message-body">
+              <p>Current Team: Los Angeles Lakers</p>
+              <p>Position: F</p>
+              <p>Conference: West</p>
+              <p>Height: </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./assets/js/script.js"></script> 
+<script src="./assets/js/script.js"></script>
+
 </html>

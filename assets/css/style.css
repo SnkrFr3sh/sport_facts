@@ -1,0 +1,8 @@
+:root {
+--darkgrey: #35363a;
+
+}
+
+body {
+    background-color: var(--darkgrey);
+}
