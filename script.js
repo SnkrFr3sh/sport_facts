@@ -60,7 +60,6 @@ function searchPlayer(){
 
         searchImage();
     })
-}
 
 fetch("https://bing-image-search1.p.rapidapi.com/images/search?q=" + playerSearch, {
     "method": "GET",
@@ -82,6 +81,6 @@ fetch("https://bing-image-search1.p.rapidapi.com/images/search?q=" + playerSearc
         picture2.setAttribute("src", data.value[1].contentUrl);
         picture3.setAttribute("src", data.value[2].contentUrl);
     })
-
+}
 
 searchBtn.click(searchPlayer);
