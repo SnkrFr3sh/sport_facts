@@ -62,31 +62,26 @@ function searchPlayer(){
     })
 }
 
-//Google Image Fill
-function searchImage(){
-    fetch("https://google-search3.p.rapidapi.com/api/v1/images/q=" + googleSearch, {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "google-search3.p.rapidapi.com",
-		"x-rapidapi-key": "f00811a9b8mshbde7c23c4a7c457p107154jsnad487331fa3c"
-	}
-    })
+fetch("https://bing-image-search1.p.rapidapi.com/images/search?q=" + playerSearch, {
+    "method": "GET",
+    "headers": {
+        "x-rapidapi-host": "bing-image-search1.p.rapidapi.com",
+        "x-rapidapi-key": "f00811a9b8mshbde7c23c4a7c457p107154jsnad487331fa3c"
+    }
+})
     .then(function (response) {
         return response.json();
     })
     .then(function (data) {
-        // console.log(data.image_results[0].image.src);
+        console.log(data, "data")
+        console.log(data.value[0].contentUrl);
         for (var i = 0; i < data.length; i++) {
-            // console.log(data[i].name);
-            var userName = document
-            // userName.textContent=data[i].image_results.image;
+            console.log(data[i].name);
         }
-        console.log("https://google-search3.p.rapidapi.com/api/v1/images/q=" + googleSearch)
-        picture1.setAttribute("src", data.image_results[0].image.src);
-        picture2.setAttribute("src", data.image_results[1].image.src);
-        picture3.setAttribute("src", data.image_results[2].image.src);
-        // picture4.setAttribute("src", data.image_results[3].image.src);
+        picture1.setAttribute("src", data.value[0].contentUrl);
+        picture2.setAttribute("src", data.value[1].contentUrl);
+        picture3.setAttribute("src", data.value[2].contentUrl);
     })
-}
+
 
 searchBtn.click(searchPlayer);
