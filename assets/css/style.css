@@ -1,8 +1,34 @@
-:root {
---darkgrey: #35363a;
-
+.nbaTeam {
+    border-radius: 50px;
+    border-color: black;
+    border-width: 10px !important;
 }
 
-body {
-    background-color: var(--darkgrey);
+.okc :hover {
+    background-image: url("../../assets/images/team_logos/Seattle_SuperSonics.png");
 }
+
+.nbaTeam :hover {
+    width: 75px;
+    }
+
+body, html {
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/hoop.JPG") !important;
+    }
+
+
+.navbar{
+    opacity: .9 !important;
+    text-decoration: none;
+    justify-content: center !important;
+    }
+
+.teamlogos{
+    opacity: .9;
+}
+
