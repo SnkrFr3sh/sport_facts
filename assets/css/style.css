@@ -1,4 +1,8 @@
 
+/* .carousel-item{
+    width: 162px !important;
+    height: 121px !important;
+} */
 
 .nbaTeam {
     border-radius: 50px;
@@ -13,8 +17,6 @@
 .nbaTeam :hover {
     width: 75px;
     }
-
- 
 
 body, html {
     height: 100%;
