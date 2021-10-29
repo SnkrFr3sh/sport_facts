@@ -19,12 +19,12 @@ var plyrConf = $("#conference");
 var plyrDivis = $("#division");
 var properImage = "";
 
-function searchPlayer() {
+//Player Information Fill
+function searchPlayer(){
     playerSearch = searchValue.val();
     playerSearch = playerSearch.toLowerCase();
     playerSearch = encodeURIComponent(playerSearch.trim());
 
-    //Player Information Fill
 
     fetch(nbaUrl + "&search=" + playerSearch, {
         "method": "GET",
@@ -33,11 +33,11 @@ function searchPlayer() {
             "x-rapidapi-key": "4660f8a703mshbbfbc04b0932863p1888e1jsn2832fd26da7c"
         }
     })
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            console.log(data.data);
+    .then(function (response) {
+        return response.json();
+      })
+    .then(function (data) {
+        console.log(data.data);
 
             bingSearch = data.data[0].first_name + "%20" + data.data[0].last_name + "%20nba";
             bingSearch = bingSearch.toLowerCase();
