@@ -1,22 +1,40 @@
+
 /* .carousel-item{
     width: 162px !important;
     height: 121px !important;
 } */
 
-#picture1{
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+.nbaTeam {
+    border-radius: 50px;
+    border-color: black;
+    border-width: 10px !important;
 }
 
-#picture2{
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+.okc :hover {
+    background-image: url("../../assets/images/team_logos/Seattle_SuperSonics.png");
 }
 
-#picture3{
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+.nbaTeam :hover {
+    width: 75px;
+    }
+
+body, html {
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/hoop.JPG") !important;
+    }
+
+
+.navbar{
+    opacity: .9 !important;
+    text-decoration: none;
+    justify-content: center !important;
+    }
+
+.teamlogos{
+    opacity: .9;
 }
+
