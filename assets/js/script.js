@@ -559,4 +559,12 @@ function autocomplete(inp, arr) {
   
   /*initiate the autocomplete function on the "myInput" element, and pass along the NBAnames array as possible autocomplete values:*/
   autocomplete(document.getElementById("search-input"), NBAnames);
+
   
+  /* navbar burger initiates when window resizes < 1025 */
+  const burgerIcon = document.querySelector("#burger");
+const navbarMenu = document.querySelector("#nav-links");
+
+burgerIcon.addEventListener("click", () => {
+    navbarMenu.classList.toggle("is-active");
+});
