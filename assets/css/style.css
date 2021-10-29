@@ -1,0 +1,22 @@
+/* .carousel-item{
+    width: 162px !important;
+    height: 121px !important;
+} */
+
+#picture1{
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#picture2{
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+#picture3{
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
