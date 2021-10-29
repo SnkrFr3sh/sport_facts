@@ -79,7 +79,6 @@ function searchPlayer() {
             picture2.setAttribute("src", data.value[1].contentUrl);
             picture3.setAttribute("src", data.value[2].contentUrl);
         })
-
 }
 
 searchBtn.click(searchPlayer);
