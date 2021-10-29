@@ -114,6 +114,6 @@ function searchPlayer() {
 //         // picture4.setAttribute("src", data.image_results[3].image.src);
 //     })
 
-}
+
 
 searchBtn.click(searchPlayer);
