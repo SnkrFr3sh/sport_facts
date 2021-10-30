@@ -4,7 +4,9 @@
 Sport facts is a website that can when entering the name of the basketball player in the search bar   <br/>
 information such as current team, position, conference, and division about this player will show up   <br/>
 
+
 ![Screenshot](project1-screenshot.PNG)
+
 
 ## Used API
 ---
